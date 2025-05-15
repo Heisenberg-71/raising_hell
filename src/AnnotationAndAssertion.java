@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * A simple program to demonstrate Javadoc and assertions.
  * <p>
@@ -26,12 +28,14 @@ public class AnnotationAndAssertion {
     /**
      * Main method to demonstrate the functionality.
      *
-     * @param args command-line arguments (not used)
+     * @param args Command-line arguments (not used)
      */
     public static void main(String[] args) {
         // Test cases
-        checkEligibility(20);  // Will pass assertion
-        checkEligibility(15);  // Will fail assertion
+       // checkEligibility(1);  // Will pass assertion
+        Scanner s=new Scanner(System.in);
+        int age=s.nextInt();
+        checkEligibility(age);  // Will fail assertion
 
         // Uncomment to test negative age
         // checkEligibility(-5);  // Will fail first assertion

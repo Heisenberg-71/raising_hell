@@ -5,7 +5,7 @@ public class RegexDemo {
 
         // 2. Finding multiple matches
         String numbers = "My numbers are 123, 456, and 789";
-        Pattern digitPattern = Pattern.compile("\\d+");
+        Pattern digitPattern = Pattern.compile("[0-9]+");
         Matcher matcher = digitPattern.matcher(numbers);
 
         System.out.println("\nNumbers found:");
@@ -21,7 +21,7 @@ public class RegexDemo {
         System.out.println("\nReplaced sentence: " + replaced);
 
         // 5. Email validation
-        String email = "test@example.com";
+        String email = "test@example.c";
         boolean isValidEmail = email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}");
         System.out.println("\nIs '" + email + "' a valid email? " + isValidEmail);
     }

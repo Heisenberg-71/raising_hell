@@ -13,9 +13,13 @@ class DBConnection{
        }
        return connection;
     }
+    void showmessage(){
+        System.out.println("it is singleton class? ");
+    }
 }
 public class SingletonPattern {
     public static void main(String[] args) {
             DBConnection connection=DBConnection.getInstance();
+            connection.showmessage();
     }
 }
